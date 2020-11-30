@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Music Player</title>
+</head>
+<body style="background:url(https://i.pinimg.com/originals/5b/30/cf/5b30cfffef3f5a05460f73d8557d780e.jpg) no-repeat center center fixed;
+background-size:cover;
+-webkit-background-size:cover;">
+
+
+
+<h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; color: aqua;">Random Music Player</h1>
+
+    <audio id="myAudio">
+        <source id="1" src="Imagine Dragons - Believer.mp3">
+      </audio>
+      
+      <audio id="myAudio1">
+        <source id="1" src="AC DC - BACK IN BLACK MUSIC WITH.mp3">
+      </audio>
+      <audio id="myAudio2">
+        <source id="1" src="Alan Walker - Alone.mp3">
+      </audio>
+      <audio id="myAudio3">
+        <source id="1" src="Alan Walker ‒ Darkside ft. Au Ra & Tomine Harket.mp3">
+      </audio>
+      <audio id="myAudio4">
+        <source id="1" src="Guns n Roses- Sweet Child o Mine -.mp3">
+      </audio>
+      <audio id="myAudio5">
+        <source id="1" src="Happy - Pharrell Williams 🎵.mp3">
+      </audio>
+    
+      
+      <button style="margin-left: 600px; background-color: crimson; color: white; height: 100px; width: 100px;" onclick="playAudio()" type="button">Play</button>
+      <button style="background-color: teal; color: white; height: 100px; width: 100px;"onclick="pauseAudio()" type="button">Pause</button> 
+      
+      <script>
+      let x = document.getElementById("myAudio");
+      let b = document.getElementById("myAudio1");
+      let c = document.getElementById("myAudio2");
+      let d = document.getElementById("myAudio3");
+      let e = document.getElementById("myAudio4");
+      let y = document.getElementById("myAudio5");
+      
+      
+      function playAudio() {
+        let a = Math.ceil(Math.random()*5)
+        console.log(a)
+        if (a==0){
+        x.play(); 
+
+        }
+        else if (a==1){
+        b.play(); 
+        }
+        else if (a==2){
+        c.play(); 
+        }
+        else if (a==3){
+        d.play(); 
+        }
+        else if (a==4){
+        e.play(); 
+        }
+        else{
+        y.play(); 
+        }
+      } 
+      function pauseAudio() { 
+        x.pause(); 
+        b.pause();
+        c.pause();  
+        d.pause(); 
+        e.pause(); 
+        y.pause(); 
+      } 
+      </script>
+  
+
+
+    
+</body>
+</html>
